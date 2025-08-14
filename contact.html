@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="contact">Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Neo Panama Maritime Service</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-lang-key="home">HOME</a></li>
+                    <li><a href="about.html" data-lang-key="about">ABOUT US</a></li>
+                    <li><a href="services.html" data-lang-key="services">SERVICES</a></li>
+                    <li><a href="contact.html" data-lang-key="contact">CONTACT US</a></li>
+                </ul>
+                <div class="language-selector">
+                    <select id="languageSelect">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="ko">KO</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-hero" class="hero-small" style="background-image: url('https://via.placeholder.com/1920x400?text=Contact+Us');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 data-lang-key="contact">CONTACT US</h1>
+                <p data-lang-key="contact-details-title">Contact Information</p>
+            </div>
+        </section>
+
+        <section id="contact-content" class="section-padded">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h2 data-lang-key="contact-details-title">Contact Information</h2>
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <strong><span data-lang-key="emergency-line-label">365-Day Emergency Line:</span></strong><br>
+                                <a href="tel:+50712345678" data-lang-key="emergency-phone">+507 12345678</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <strong><span data-lang-key="general-inquiry-label">General Inquiries (Office):</span></strong><br>
+                                <a href="tel:+50787654321" data-lang-key="general-phone">+507 87654321</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <strong><span data-lang-key="email-label">Email:</span></strong><br>
+                                <a href="mailto:info@neopanama.com" data-lang-key="email-address">info@neopanama.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong><span data-lang-key="address-label">Office Address:</span></strong><br>
+                                <span data-lang-key="full-address">Building A, Suite B, Av. Balboa, Panama City, Panama</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <strong><span data-lang-key="office-hours-label">Office Hours:</span></strong><br>
+                                <span data-lang-key="office-hours-details">Monday - Friday, 08:00 - 17:00 (Panama Time)</span>
+                            </li>
+                        </ul>
+                        <p class="emergency-note" data-lang-key="emergency-note">Providing fast and accurate service, the best choice for safe navigation.</p>
+                    </div>
+                    <div class="contact-form-container">
+                        <h2 data-lang-key="form-title">Online Inquiry Form</h2>
+                        <form action="#" method="post">
+                            <label for="company" data-lang-key="label-company">Company / Vessel Name:</label>
+                            <input type="text" id="company" name="company" required>
+
+                            <label for="contact-person" data-lang-key="label-contact">Contact Person Name:</label>
+                            <input type="text" id="contact-person" name="contact-person" required>
+
+                            <label for="email" data-lang-key="label-email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="phone" data-lang-key="label-phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone">
+
+                            <label for="inquiry-type" data-lang-key="label-inquiry-type">Type of Inquiry:</label>
+                            <select id="inquiry-type" name="inquiry-type">
+                                <option value="" disabled selected data-lang-key="select-option">Select an option</option>
+                                <option value="provisions" data-lang-key="option-provisions">Provisions Quote</option>
+                                <option value="chandling" data-lang-key="option-chandling">Chandling Inquiry</option>
+                                <option value="bunker" data-lang-key="option-bunker">Bunker / Lubricants Inquiry</option>
+                                <option value="other" data-lang-key="option-other">Other</option>
+                            </select>
+
+                            <label for="message" data-lang-key="label-message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+
+                            <label for="file-upload" data-lang-key="label-file">Attach File (Optional):</label>
+                            <input type="file" id="file-upload" name="file-upload">
+
+                            <button type="submit" class="btn primary-btn" data-lang-key="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.5273760431427!2d-79.52296488583486!3d8.974442691526432!2m3!1f0!2m3!1f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa7bc2c0e7b8c2d%3A0xc3c9a7b5e4c0d1e1!2sAv.%20Balboa%2C%20Panama%20City%2C%20Panama!5e0!3m2!1sen!2skr!4v1678886400000!5m2!1sen!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p class="map-note" data-lang-key="map-note">The map shows the approximate location of our office.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Neo Panama Maritime Service</div>
+                <div class="footer-links">
+                    <a href="#" data-lang-key="privacy-policy">Privacy Policy</a>
+                    <a href="#" data-lang-key="terms-of-service">Terms of Service</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/your-company-name" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <p class="copyright" data-lang-key="copyright">&copy; 2025 Neo Panama Maritime Service. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
